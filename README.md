@@ -24,3 +24,6 @@ using System;
 \CodeSystem\Reference.txt
 
 编写调用的动态库相对路径
+
+# 界面
+![image](https://user-images.githubusercontent.com/17681289/139581933-70b8f2de-f771-4fc4-9ebb-3be4aa590f43.png)
