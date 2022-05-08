@@ -49,13 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\DataModel.cs" />
-    <Compile Include="Presenters\CodeEditorPresenter.cs" />
-    <Compile Include="Views\CodeEditer.cs">
+    <Compile Include="Common\CodeEditorHelper.cs" />
+    <Compile Include="Controls\CodeEditPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomReferenceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CodeEditer.Designer.cs">
-      <DependentUpon>CodeEditer.cs</DependentUpon>
+    <Compile Include="Controls\CustomReferenceForm.Designer.cs">
+      <DependentUpon>CustomReferenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotKeyManager.cs" />
+    <Compile Include="Models\DataModel.cs" />
+    <Compile Include="Presenters\CodeEditorPresenter.cs" />
+    <Compile Include="SearchManager.cs" />
+    <Compile Include="Views\CodeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CodeEditor.Designer.cs">
+      <DependentUpon>CodeEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="CodeManager.cs" />
     <Compile Include="CodeStatus.cs" />
@@ -69,8 +87,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\CodeEditer.resx">
-      <DependentUpon>CodeEditer.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\CustomReferenceForm.resx">
+      <DependentUpon>CustomReferenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CodeEditor.resx">
+      <DependentUpon>CodeEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +125,68 @@
   <ItemGroup>
     <None Include="Resources\Clear.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Content.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSharp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Method.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Namespace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

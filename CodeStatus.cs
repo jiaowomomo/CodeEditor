@@ -13,4 +13,10 @@ namespace CommonLibrary.CodeSystem
         Pause,
         AbnormalStop
     }
+
+    public enum SubType
+    {
+        Method = 0,
+        Class
+    }
 }

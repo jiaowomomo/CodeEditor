@@ -19,7 +19,7 @@ namespace CommonLibrary.CodeSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            CodeEditer codeEditer = new CodeEditer();
+            CodeEditor codeEditer = new CodeEditor();
             CodeEditorPresenter codeEditorPresenter = new CodeEditorPresenter(codeEditer);
             Application.Run(codeEditer);
         }
