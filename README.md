@@ -6,24 +6,6 @@ C#代码编辑器，可用于动态编译生成C#执行程序，使软件功能�
 ● .NET Framework 4.7.2
 
 ● ScintillaNET，第三方文本控件
-# 文件介绍
-\History\CodePath.txt
-
-记录主函数执行内容的保存地址
-
-\CodeSystem\Header.txt
-
-编写引用空间，例如：
-using Microsoft.CSharp;
-using System;
-
-\CodeSystem\Code.txt
-
-保存编译后生成的整体代码
-
-\CodeSystem\Reference.txt
-
-编写调用的动态库相对路径
 
 # 界面
-![image](https://user-images.githubusercontent.com/17681289/139581933-70b8f2de-f771-4fc4-9ebb-3be4aa590f43.png)
+![image](https://user-images.githubusercontent.com/17681289/167304202-a5f1c57e-16a1-4894-bbf0-1d7d03bc52b5.png)
